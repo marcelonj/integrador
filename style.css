@@ -75,3 +75,11 @@ li {
 .boton-enviar:hover {
     background-color: var(--color-green);
 }
+
+@media screen and (max-width: 1399px) {
+    .texto-responsive {
+        background-image: url(images/ba1_opaca.jpg);
+        height: 95vh;
+        background-size: cover;
+    }
+}
