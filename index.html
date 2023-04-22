@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <!-- Header y nav -->
   <header class="conteiner-fluid">
     <nav class="navbar navbar-expand-lg fondo-gris position-fixed z-2 w-100">
       <div class="container">
@@ -46,6 +47,8 @@
       </div>
     </nav>
   </header>
+
+  <!-- Carrusel de imágenes -->
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner contenedor-carousel">
       <div class="texto-blanco position-absolute z-1 top-50 start-50 fw-medium fs-4 p-4">
@@ -79,43 +82,55 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <main class="container">
-    <h1>Conf Bs As</h1>
-    <p>Bs As llega por primera vez a Argentina. Un evetto para compartir con nuestra comunidad el conocimiento y
-      experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros
-      estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-    <button>Quiero ser orador</button>
-    <button>Comprar tickets</button>
-  </main>
-  <article class="container">
-    <h2>CONOCE A LOS ORADORES</h2>
-    <section>
-      <div class="tag">JavaScript</div>
-      <div class="tag">React</div>
-      <img src="./images/steve.jpg" alt="Steve Jobs">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis
-        impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis
-        ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
-      </p>
-    </section>
-    <section>
-      <div class="tag">JavaScript</div>
-      <div class="tag">React</div>
-      <img src="./images/bill.jpg" alt="Bill Gates">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis
-        impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis
-        ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
-      </p>
-    </section>
-    <section>
-      <div class="tag">Negocios</div>
-      <div class="tag">Startups</div>
-      <img src="./images/ada.jpeg" alt="Ada Lovelace">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis
-        impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis
-        ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
-      </p>
-    </section>
+
+  <!-- Sección oradores -->
+  <article class="container my-5">
+    <p class="text-center">CONOCE A LOS</p>
+    <p class="text-center fs-2">ORADORES</p>
+    <div class="container d-flex justify-content-between">
+      <div class="card m-3">
+        <img src="./images/steve.jpg" alt="Steve Jobs">
+        <div class="card-body">
+          <div class="badge text-bg-warning">JavaScript</div>
+          <div class="badge text-bg-info">React</div>
+          <h3>Steve Jobs</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci
+            blanditiis
+            impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab
+            corporis
+            ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
+          </p>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="./images/bill.jpg" alt="Bill Gates">
+        <div class="card-body">
+          <div class="badge text-bg-warning">JavaScript</div>
+          <div class="badge text-bg-info">React</div>
+          <h3>Bill Gates</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci
+            blanditiis
+            impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab
+            corporis
+            ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
+          </p>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img src="./images/ada.jpeg" alt="Ada Lovelace">
+        <div class="card-body">
+          <div class="badge text-bg-secondary">Negocios</div>
+          <div class="badge text-bg-danger">Startups</div>
+          <h3>Ada Lovelace</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci
+            blanditiis
+            impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab
+            corporis
+            ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
+          </p>
+        </div>
+      </div>
+    </div>
   </article>
   <article class="container">
     <img src="./images/honolulu.jpg" alt="imagen playa" class="container">
