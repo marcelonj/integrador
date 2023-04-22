@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-:root{
+:root {
     --color-green: #29A744;
     --color-light-green: #96C93E;
     --color-dark--green: #348E48;
     --color-grey: #353A40;
-    --color-light-grey: #9A8D7A;
+    --color-light-grey: #999DA0;
     --color-blue: #1D465C;
     --color-white: #FFFFF3;
     --color-yellow: #FEC106;
@@ -13,10 +13,39 @@
     --color-red: #DC3546;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+* {
+    font-family: 'Roboto', sans-serif !important;
+    box-sizing: border-box;
 }
 
-.texto-blanco{
+.texto-blanco {
     color: var(--color-white);
+}
+
+.texto-gris {
+    color: var(--color-light-grey);
+    text-decoration: none;
+    padding: 8px;
+    transition: all .2s;
+}
+
+.texto-gris:hover {
+    color: var(--color-white);
+}
+
+.texto-verde {
+    color: var(--color-dark--green);
+}
+
+.texto-verde:hover {
+    color: var(--color-green);
+}
+
+.fondo-gris {
+    background-color: var(--color-grey);
+}
+
+.contenedor-carousel .contenedor-carousel-img {
+    filter: brightness(0.5);
+    height: 95vh;
 }

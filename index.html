@@ -1,91 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conferencia Bs As</title>
-    <link rel="shortcut icon" href="./images/codoacodo.png" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conferencia Bs As</title>
+  <link rel="shortcut icon" href="./images/codoacodo.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
 </head>
+
 <body>
-    <nav class="container">
-        <div class="nav-logo">
-            <img src="./images/codoacodo.png" alt="logo codo a codo">
-            <h2>Conf Bs As</h2>
+  <header class="conteiner-fluid">
+    <nav class="navbar navbar-expand-lg fondo-gris position-fixed z-2 w-100">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./images/codoacodo.png" alt="logo codo a codo" height="60px">
+          <h2 class="texto-blanco fs-4 m-0">Conf Bs As</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-xl-center align-items-md-start">
+            <li class="nav-item">
+              <a class="texto-gris" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris" href="#">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris" href="#">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris texto-verde" href="#">Comprar tickets</a>
+            </li>
+          </ul>
         </div>
-        <div class="nav-menu">
-            <ul>
-                <li>La conferencia</li>
-                <li>Los oradores</li>
-                <li>El lugar y la fecha</li>
-                <li>Conviértete en orador</li>
-                <li>Comprar tickets</li>
-            </ul>
-        </div>
+      </div>
     </nav>
-    <main class="container">
-        <h1>Conf Bs As</h1>
-        <p>Bs As llega por primera vez a Argentina. Un evetto para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-        <button>Quiero ser orador</button>
-        <button>Comprar tickets</button>
-    </main>
-    <article class="container">
-        <h2>CONOCE A LOS ORADORES</h2>
-        <section>
-            <div class="tag">JavaScript</div>
-            <div class="tag">React</div>
-            <img src="./images/steve.jpg" alt="Steve Jobs">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
-            </p>
-        </section>
-        <section>
-            <div class="tag">JavaScript</div>
-            <div class="tag">React</div>
-            <img src="./images/bill.jpg" alt="Bill Gates">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
-            </p>
-        </section>
-        <section>
-            <div class="tag">Negocios</div>
-            <div class="tag">Startups</div>
-            <img src="./images/ada.jpeg" alt="Ada Lovelace">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
-            </p>
-        </section>
-    </article>
-    <article class="container">
-        <img src="./images/honolulu.jpg" alt="imagen playa">
-        <section>
-            <h2>Bs As - Octubre</h2>
-            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste se la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-            <button>Conocé más</button>
-        </section>
-    </article>
-    <div class="contact_form container">
-        <h2>CONVIÉRTETE EN UN ORADOR</h2>
-        <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
-        <form >
-            <input type="text" name="name" placeholder="Nombre">
-            <input type="text" name="surname" placeholder="Apellido">
-            <textarea name="comment" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
-            <p>Recuerda incluir un título para tu charla</p>
-            <button type="submit">Enviar</button>
-        </form>
-    </div class="contact_form">
-    <footer class="container">
-        <ul>
-            <li>Preguntas frecuentes</li>
-            <li>Contáctanos</li>
-            <li>Prensa</li>
-            <li>conferencias</li>
-            <li>Términos y condiciones</li>
-            <li>Privacidad</li>
-            <li>Estudiantes</li>
-        </ul>
-    </footer>
-    <script src="./bootstrap.bundle.min.js"></script>
+  </header>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner contenedor-carousel">
+      <div class="texto-blanco position-absolute z-1 top-50 start-50 fw-medium fs-4 p-4">
+        <p>Conf Bs As</p>
+        <p>Bs As llega por primera vez a Argentina. Un eveto para compartir con nuestra comunidad el conocimiento y
+          experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a
+          otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <div class="botones position-relative start-50">
+          <button class="btn btn-outline-light">Quiero ser orador</button>
+          <button class="btn btn-success">Comprar tickets</button>
+        </div>
+      </div>
+      <div class="carousel-item active contenedor-carousel-img">
+        <img src="./images/ba1.jpg" class="d-block w-100" alt="Buenos Aires 1">
+      </div>
+      <div class="carousel-item contenedor-carousel-img">
+        <img src="./images/ba2.jpg" class="d-block w-100" alt="Buenos Aires 2">
+      </div>
+      <div class="carousel-item contenedor-carousel-img">
+        <img src="./images/ba3.jpg" class="d-block w-100" alt="Buenos Aires 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <main class="container">
+    <h1>Conf Bs As</h1>
+    <p>Bs As llega por primera vez a Argentina. Un evetto para compartir con nuestra comunidad el conocimiento y
+      experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros
+      estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+    <button>Quiero ser orador</button>
+    <button>Comprar tickets</button>
+  </main>
+  <article class="container">
+    <h2>CONOCE A LOS ORADORES</h2>
+    <section>
+      <div class="tag">JavaScript</div>
+      <div class="tag">React</div>
+      <img src="./images/steve.jpg" alt="Steve Jobs">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis
+        impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis
+        ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
+      </p>
+    </section>
+    <section>
+      <div class="tag">JavaScript</div>
+      <div class="tag">React</div>
+      <img src="./images/bill.jpg" alt="Bill Gates">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis
+        impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis
+        ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
+      </p>
+    </section>
+    <section>
+      <div class="tag">Negocios</div>
+      <div class="tag">Startups</div>
+      <img src="./images/ada.jpeg" alt="Ada Lovelace">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quam voluptatibus voluptates adipisci blanditiis
+        impedit maiores reiciendis eos et. Dolores animi ipsam odio nemo commodi, soluta facilis vel iste ab corporis
+        ratione. Id cumque nobis molestiae voluptatem molestias ex, tempora esse voluptate.
+      </p>
+    </section>
+  </article>
+  <article class="container">
+    <img src="./images/honolulu.jpg" alt="imagen playa" class="container">
+    <section>
+      <h2>Bs As - Octubre</h2>
+      <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es
+        la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
+        urbana en la costa sureste se la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado
+        consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+      <button>Conocé más</button>
+    </section>
+  </article>
+  <div class="contact_form container">
+    <h2>CONVIÉRTETE EN UN ORADOR</h2>
+    <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+    <form>
+      <input type="text" name="name" placeholder="Nombre">
+      <input type="text" name="surname" placeholder="Apellido">
+      <textarea name="comment" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+      <p>Recuerda incluir un título para tu charla</p>
+      <button type="submit">Enviar</button>
+    </form>
+  </div class="contact_form">
+  <footer class="container">
+    <ul>
+      <li>Preguntas frecuentes</li>
+      <li>Contáctanos</li>
+      <li>Prensa</li>
+      <li>conferencias</li>
+      <li>Términos y condiciones</li>
+      <li>Privacidad</li>
+      <li>Estudiantes</li>
+    </ul>
+  </footer>
+  <script src="./bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
