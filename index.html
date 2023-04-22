@@ -31,13 +31,13 @@
               <a class="texto-gris" href="#">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="texto-gris" href="#">Los oradores</a>
+              <a class="texto-gris" href="#oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="texto-gris" href="#">El lugar y la fecha</a>
+              <a class="texto-gris" href="#lugar">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="texto-gris" href="#">Conviértete en orador</a>
+              <a class="texto-gris" href="#formulario">Conviértete en orador</a>
             </li>
             <li class="nav-item">
               <a class="texto-gris texto-verde" href="#">Comprar tickets</a>
@@ -74,10 +74,11 @@
   </div>
 
   <!-- Sección oradores -->
+  <a name="oradores"></a>
   <article class="container my-5">
     <p class="text-center">CONOCE A LOS</p>
     <p class="text-center fs-1">ORADORES</p>
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex flex-column flex-lg-row justify-content-lg-between">
       <div class="card m-3">
         <img src="./images/steve.jpg" alt="Steve Jobs">
         <div class="card-body">
@@ -123,11 +124,12 @@
     </div>
   </article>
 
-  <!-- Imágen y mensaje -->
+  <!-- Lufar y fecha -->
+  <a name="lugar"></a>
   <article class="container-fluid">
     <section class="row">
-      <img src="./images/honolulu.jpg" alt="imagen playa" class="col-6 p-0">
-      <div class="col-6 fondo-gris texto-blanco p-3">
+      <img src="./images/honolulu.jpg" alt="imagen playa" class="col-12 col-md-6 p-0">
+      <div class="col-12 col-md-6 fondo-gris texto-blanco p-3">
         <h2 class="fs-1">Bs As - Octubre</h2>
         <p class="fs-6 lh-lg">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
           Estados Unidos. Honolulu es
@@ -142,15 +144,16 @@
   </article>
 
   <!-- Formulario -->
+  <a name="formulario"></a>
   <div class="contact_form container my-5">
     <p class="text-center">CONVIÉRTETE EN UN</p>
     <p class="text-center fs-1">ORADOR</p>
     <p class="text-center fs-5">Anótate como orador para dar una <span class="subrayado-punteado">charla ignite</span>.
       Cuéntanos de qué quieres hablar!</p>
     <form>
-      <div class="row mx-5 my-3">
-        <input type="text" name="name" placeholder="Nombre" class="form-control col me-5">
-        <input type="text" name="surname" placeholder="Apellido" class="form-control col">
+      <div class="row mx-5">
+        <input type="text" name="name" placeholder="Nombre" class="form-control col-12 col-md me-5 mb-3">
+        <input type="text" name="surname" placeholder="Apellido" class="form-control col-12 col-md mb-3">
       </div>
       <div class="row mx-5">
         <textarea name="comment" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"
@@ -167,14 +170,15 @@
 
   <!-- Footer -->
   <footer class="container-fluid fondo-azul py-5">
-    <ul class="px-5 d-flex justify-content-evenly texto-blanco fs-5">
-      <li class="nav-item">Preguntas frecuentes</li>
-      <li class="nav-item">Contáctanos</li>
-      <li class="nav-item">Prensa</li>
-      <li class="nav-item">conferencias</li>
-      <li class="nav-item">Términos y condiciones</li>
-      <li class="nav-item">Privacidad</li>
-      <li class="nav-item">Estudiantes</li>
+    <ul
+      class="p-0 m-0 px-xl-5 d-flex flex-column align-items-center flex-xl-row justify-content-between justify-content-xl-evenly texto-blanco fs-5">
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Preguntas frecuentes</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Contáctanos</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Prensa</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Conferencias</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Términos y condiciones</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Privacidad</a></li>
+      <li class="nav-item"><a class="texto-gris" href="#">Estudiantes</a></li>
     </ul>
   </footer>
   <script src="./bootstrap.bundle.min.js"></script>
