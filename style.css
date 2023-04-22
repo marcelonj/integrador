@@ -72,11 +72,15 @@ li {
     transition: all .2s;
 }
 
+.margin-carousel {
+    margin-top: -20vh;
+}
+
 .boton-enviar:hover {
     background-color: var(--color-green);
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1199px) {
     .texto-responsive {
         background-image: url(images/ba1_opaca.jpg);
         height: 95vh;
