@@ -49,7 +49,7 @@
   </header>
 
   <!-- Carrusel de imágenes -->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner contenedor-carousel">
       <div class="texto-blanco position-absolute z-1 top-50 start-50 fw-medium fs-4 p-4">
         <p>Conf Bs As</p>
@@ -71,22 +71,12 @@
         <img src="./images/ba3.jpg" class="d-block w-100" alt="Buenos Aires 3">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
   <!-- Sección oradores -->
   <article class="container my-5">
     <p class="text-center">CONOCE A LOS</p>
-    <p class="text-center fs-2">ORADORES</p>
+    <p class="text-center fs-1">ORADORES</p>
     <div class="container d-flex justify-content-between">
       <div class="card m-3">
         <img src="./images/steve.jpg" alt="Steve Jobs">
@@ -132,37 +122,59 @@
       </div>
     </div>
   </article>
-  <article class="container">
-    <img src="./images/honolulu.jpg" alt="imagen playa" class="container">
-    <section>
-      <h2>Bs As - Octubre</h2>
-      <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es
-        la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
-        urbana en la costa sureste se la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado
-        consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
-      <button>Conocé más</button>
+
+  <!-- Imágen y mensaje -->
+  <article class="container-fluid">
+    <section class="row">
+      <img src="./images/honolulu.jpg" alt="imagen playa" class="col-6 p-0">
+      <div class="col-6 fondo-gris texto-blanco p-3">
+        <h2 class="fs-1">Bs As - Octubre</h2>
+        <p class="fs-6 lh-lg">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
+          Estados Unidos. Honolulu es
+          la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al
+          área
+          urbana en la costa sureste se la isla de Oahu, la ciudad y el condado de Honolulu han formado una
+          ciudad-condado
+          consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+        <button class="btn btn-outline-light">Conocé más</button>
+      </div>
     </section>
   </article>
-  <div class="contact_form container">
-    <h2>CONVIÉRTETE EN UN ORADOR</h2>
-    <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+
+  <!-- Formulario -->
+  <div class="contact_form container my-5">
+    <p class="text-center">CONVIÉRTETE EN UN</p>
+    <p class="text-center fs-1">ORADOR</p>
+    <p class="text-center fs-5">Anótate como orador para dar una <span class="subrayado-punteado">charla ignite</span>.
+      Cuéntanos de qué quieres hablar!</p>
     <form>
-      <input type="text" name="name" placeholder="Nombre">
-      <input type="text" name="surname" placeholder="Apellido">
-      <textarea name="comment" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
-      <p>Recuerda incluir un título para tu charla</p>
-      <button type="submit">Enviar</button>
+      <div class="row mx-5 my-3">
+        <input type="text" name="name" placeholder="Nombre" class="form-control col me-5">
+        <input type="text" name="surname" placeholder="Apellido" class="form-control col">
+      </div>
+      <div class="row mx-5">
+        <textarea name="comment" cols="30" rows="10" placeholder="Sobre qué quieres hablar?"
+          class="form-control"></textarea>
+      </div>
+      <div class="col mx-5">
+        <p class="form-text">Recuerda incluir un título para tu charla</p>
+      </div>
+      <div class="row mx-5">
+        <button type="submit" class="boton-enviar texto-blanco fs-4">Enviar</button>
+      </div>
     </form>
   </div class="contact_form">
-  <footer class="container">
-    <ul>
-      <li>Preguntas frecuentes</li>
-      <li>Contáctanos</li>
-      <li>Prensa</li>
-      <li>conferencias</li>
-      <li>Términos y condiciones</li>
-      <li>Privacidad</li>
-      <li>Estudiantes</li>
+
+  <!-- Footer -->
+  <footer class="container-fluid fondo-azul py-5">
+    <ul class="px-5 d-flex justify-content-evenly texto-blanco fs-5">
+      <li class="nav-item">Preguntas frecuentes</li>
+      <li class="nav-item">Contáctanos</li>
+      <li class="nav-item">Prensa</li>
+      <li class="nav-item">conferencias</li>
+      <li class="nav-item">Términos y condiciones</li>
+      <li class="nav-item">Privacidad</li>
+      <li class="nav-item">Estudiantes</li>
     </ul>
   </footer>
   <script src="./bootstrap.bundle.min.js"></script>
