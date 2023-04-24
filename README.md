@@ -3,8 +3,10 @@ Repositorio destinado a contener el proyecto integrador frontend del curso Codo 
 
 Tecnologias utilizadas:
 
--HTML
+- HTML
+- CSS
+- Bootstrap
 
--CSS
+Imágen de referencia / Modelo a seguir:
 
--Bootstrap
+![Imágen de referencia](https://github.com/marcelonj/integrador_front/blob/main/final_front_2021.jpg)
