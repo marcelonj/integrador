@@ -85,7 +85,7 @@ li {
 
 @media screen and (max-width: 1199px) {
     .texto-responsive {
-        background-image: url(images/ba1.jpg);
+        background-image: url(../images/ba1.jpg);
         height: 95vh;
         background-size: cover;
     }
