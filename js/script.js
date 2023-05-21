@@ -6,6 +6,9 @@ var categoria = document.getElementById("Lista");
 var nombre = document.getElementById("Nombre");
 var apellido = document.getElementById("Apellido");
 var correo = document.getElementById("Correo");
+var estudiante = document.getElementById("TarjetaEstudiante");
+var trainee = document.getElementById("TarjetaTrainee");
+var junior = document.getElementById("TarjetaJunior");
 
 function calcularTotal() {
     var descuento;
@@ -53,5 +56,55 @@ function borrarContenido() {
     totalPagar.innerHTML = "";
 }
 
-botonResumen.addEventListener("click", calcularTotal)
-botonBorrar.addEventListener("click", borrarContenido)
+function pintarTarjetas() {
+    switch (categoria.value) {
+        case "1":
+            estudiante.classList.remove("bg-info-subtle");
+            trainee.classList.remove("bg-info-subtle");
+            junior.classList.remove("bg-info-subtle");
+            break;
+        case "2":
+            estudiante.classList.add("bg-info-subtle");
+            trainee.classList.remove("bg-info-subtle");
+            junior.classList.remove("bg-info-subtle");
+            break;
+        case "3":
+            trainee.classList.add("bg-info-subtle");
+            estudiante.classList.remove("bg-info-subtle");
+            junior.classList.remove("bg-info-subtle");
+            break;
+        case "4":
+            junior.classList.add("bg-info-subtle");
+            estudiante.classList.remove("bg-info-subtle");
+            trainee.classList.remove("bg-info-subtle");
+            break;
+        default:
+            estudiante.classList.remove("bg-info-subtle");
+            trainee.classList.remove("bg-info-subtle");
+            junior.classList.remove("bg-info-subtle");
+    }
+}
+
+
+/* Listeners */
+botonResumen.addEventListener("click", calcularTotal);
+botonBorrar.addEventListener("click", borrarContenido);
+estudiante.addEventListener("click", () => {
+    categoria.value = 2;
+    estudiante.classList.add("bg-info-subtle");
+    trainee.classList.remove("bg-info-subtle");
+    junior.classList.remove("bg-info-subtle");
+})
+trainee.addEventListener("click", () => {
+    categoria.value = 3;
+    trainee.classList.add("bg-info-subtle");
+    estudiante.classList.remove("bg-info-subtle");
+    junior.classList.remove("bg-info-subtle");
+})
+junior.addEventListener("click", () => {
+    categoria.value = 4;
+    junior.classList.add("bg-info-subtle");
+    estudiante.classList.remove("bg-info-subtle");
+    trainee.classList.remove("bg-info-subtle");
+})
+categoria.addEventListener("change", pintarTarjetas);
