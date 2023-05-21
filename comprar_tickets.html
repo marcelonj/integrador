@@ -50,20 +50,20 @@
 
   <!-- Tarjetas -->
   <div class="container margen-top-nav fs-4 text-center">
-    <div class="row">
-      <div id="TarjetaEstudiante" class="col-12 col-md m-1 p-3 border border-primary">
+    <div class="row mx-3 mx-md-0">
+      <div id="TarjetaEstudiante" class="col-12 col-md m-1 p-0 p-md-3 border border-primary seleccion">
         <h2 class="my-4 fw-medium">Estudiante</h2>
         <p class="my-4">Tiene un descuento</p>
         <p class="my-4 fw-medium">80%</p>
         <p class="my-4 texto-gris-simple">*presentar documentación</p>
       </div>
-      <div id="TarjetaTrainee" class="col-12 col-md m-1 p-3 border border-info-subtle">
+      <div id="TarjetaTrainee" class="col-12 col-md m-1 p-3 border border-info-subtle seleccion">
         <h2 class="my-4 fw-medium">Trainee</h2>
         <p class="my-4">Tiene un descuento</p>
         <p class="my-4 fw-medium">50%</p>
         <p class="my-4 texto-gris-simple">*presentar documentación</p>
       </div>
-      <div id="TarjetaJunior" class="col-12 col-md m-1 p-3 border border-warning">
+      <div id="TarjetaJunior" class="col-12 col-md m-1 p-3 border border-warning seleccion">
         <h2 class="my-4 fw-medium">Junior</h2>
         <p class="my-4">Tiene un descuento</p>
         <p class="my-4 fw-medium">15%</p>
@@ -77,7 +77,7 @@
   <div class="contact_form container my-5">
     <p class="text-center fs-5">VENTA</p>
     <p class="text-center fs-1">VALOR DE TICKET $200</p>
-    <form onsubmit="event.preventDefault();">
+    <form onsubmit="event.preventDefault();" class="mx-5 mx-md-0">
       <div class="row">
         <input type="text" name="name" placeholder="Nombre" id="Nombre" class="form-control col-12 col-md me-5 mb-3">
         <input type="text" name="surname" placeholder="Apellido" id="Apellido" class="form-control col-12 col-md mb-3">

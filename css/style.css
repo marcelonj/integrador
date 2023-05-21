@@ -11,6 +11,7 @@
     --color-yellow: #FEC106;
     --color-cyan: #17A2B9;
     --color-red: #DC3546;
+    --color-select: rgb(187, 245, 245);
 }
 
 * {
@@ -89,6 +90,14 @@ li {
 
 .margen-top-nav {
     padding-top: 12vh;
+}
+
+.seleccion {
+    transition: all .2s;
+}
+
+.seleccion:hover {
+    background-color: var(--color-select);
 }
 
 @media screen and (max-width: 1199px) {
