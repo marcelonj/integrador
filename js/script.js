@@ -21,8 +21,8 @@ function calcularTotal() {
             descuento = 0.8;
             break;
         case "3":
-                descuento = 0.5;
-                break;
+            descuento = 0.5;
+            break;
         case "4":
             descuento = 0.15;
             break;
@@ -38,10 +38,10 @@ function calcularTotal() {
         totalPagar.innerHTML = "Ha ocurrido un error";
     }
     else {
-    document.getElementById("errorCategoria").classList.add("d-none");
-    document.getElementById("errorCantidad").classList.add("d-none");
-    let total = cantidad.value * (200 - (200 * descuento));
-    totalPagar.innerHTML = total;
+        document.getElementById("errorCategoria").classList.add("d-none");
+        document.getElementById("errorCantidad").classList.add("d-none");
+        let total = cantidad.value * (200 - (200 * descuento));
+        totalPagar.innerHTML = total;
     }
 }
 
@@ -53,6 +53,9 @@ function borrarContenido() {
     categoria.value = "Categoria";
     document.getElementById("errorCategoria").classList.add("d-none");
     document.getElementById("errorCantidad").classList.add("d-none");
+    estudiante.classList.remove("bg-info-subtle");
+    trainee.classList.remove("bg-info-subtle");
+    junior.classList.remove("bg-info-subtle");
     totalPagar.innerHTML = "";
 }
 
