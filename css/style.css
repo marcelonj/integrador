@@ -26,6 +26,10 @@ li {
     color: var(--color-white);
 }
 
+.texto-gris-simple {
+    color: var(--color-light-grey);
+}
+
 .texto-gris {
     color: var(--color-light-grey);
     text-decoration: none;
@@ -81,6 +85,10 @@ li {
 
 .boton-enviar:hover {
     background-color: var(--color-green);
+}
+
+.margen-top-nav {
+    padding-top: 12vh;
 }
 
 @media screen and (max-width: 1199px) {

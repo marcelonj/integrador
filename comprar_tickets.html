@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coprar Tickets</title>
+  <link rel="shortcut icon" href="./images/codoacodo.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Header y nav -->
+  <header class="conteiner-fluid">
+    <nav class="navbar navbar-expand-lg fondo-gris position-fixed z-2 w-100">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./images/codoacodo.png" alt="logo codo a codo" height="60px">
+          <h2 class="texto-blanco fs-4 m-0">Conf Bs As</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-xl-center align-items-md-start">
+            <li class="nav-item">
+              <a class="texto-gris" href="index.html">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris" href="index.html#oradores">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris" href="index.html#lugar">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris" href="index.html#formulario">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="texto-gris texto-verde" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Tarjetas -->
+  <div class="container margen-top-nav fs-4 text-center">
+    <div class="row">
+      <div class="col-12 col-md m-1 p-3 border border-primary">
+        <h2 class="my-4 fw-medium">Estudiante</h2>
+        <p class="my-4">Tiene un descuento</p>
+        <p class="my-4 fw-medium">80%</p>
+        <p class="my-4 texto-gris-simple">*presentar documentación</p>
+      </div>
+      <div class="col-12 col-md m-1 p-3 border border-info-subtle">
+        <h2 class="my-4 fw-medium">Trainee</h2>
+        <p class="my-4">Tiene un descuento</p>
+        <p class="my-4 fw-medium">50%</p>
+        <p class="my-4 texto-gris-simple">*presentar documentación</p>
+      </div>
+      <div class="col-12 col-md m-1 p-3 border border-warning">
+        <h2 class="my-4 fw-medium">Junior</h2>
+        <p class="my-4">Tiene un descuento</p>
+        <p class="my-4 fw-medium">15%</p>
+        <p class="my-4 texto-gris-simple">*presentar documentación</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <a name="formulario"></a>
+  <div class="contact_form container my-5">
+    <p class="text-center fs-5">VENTA</p>
+    <p class="text-center fs-1">VALOR DE TICKET $200</p>
+    <form onsubmit="event.preventDefault();">
+      <div class="row">
+        <input type="text" name="name" placeholder="Nombre" id="Nombre" class="form-control col-12 col-md me-5 mb-3">
+        <input type="text" name="surname" placeholder="Apellido" id="Apellido" class="form-control col-12 col-md mb-3">
+      </div>
+      <div class="row">
+        <input type="email" name="correo" placeholder="Correo" id="Correo" class="form-control col-12 mb-3">
+      </div>
+      <div class="row">
+        <div class="col-12 col-md me-5 mb-3 p-0">
+          <p>Cantidad</p>
+          <input type="number" name="cantidad" placeholder="Cantidad" id="Cantidad" class="form-control">
+          <p id="errorCantidad" class="text-danger ps-3 d-none">Ingrese una cantidad</p>
+        </div>
+        <div class="col-12 col-md mb-3 p-0">
+          <p>Categoria</p>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Categoria">
+          <datalist id="datalistOptions">
+            <option value="General">
+            <option value="Estudiante">
+            <option value="Trainee">
+            <option value="Junior">
+          </datalist>
+          <p id="errorCategoria" class="text-danger ps-3 d-none">Seleccione una categoria</p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Total a Pagar: $ <span id="Total"></span></p>
+      </div>
+      <!-- Bortones -->
+      <div class="row">
+        <button id="Borrar" class="boton-enviar texto-blanco fs-4 col-12 col-md me-md-1 mb-3 mb-md-0">Borrar</button>
+        <button id="Resumen" class="boton-enviar texto-blanco fs-4 col-12 col-md ms-md-1">Resumen</button>
+      </div>
+    </form>
+  </div class="contact_form">
+
+  <!-- Footer -->
+  <footer class="container-fluid fondo-azul py-5">
+    <ul
+      class="p-0 m-0 px-xl-5 d-flex flex-column align-items-center flex-xl-row justify-content-between justify-content-xl-evenly texto-blanco fs-5">
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Preguntas frecuentes</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Contáctanos</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Prensa</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Conferencias</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Términos y condiciones</a></li>
+      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Privacidad</a></li>
+      <li class="nav-item"><a class="texto-gris" href="#">Estudiantes</a></li>
+    </ul>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
