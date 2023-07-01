@@ -10,6 +10,8 @@ var estudiante = document.getElementById("TarjetaEstudiante");
 var trainee = document.getElementById("TarjetaTrainee");
 var junior = document.getElementById("TarjetaJunior");
 
+document.getElementById("Comprar").disabled = true;
+
 function calcularTotal() {
     var descuento;
     var error = false;
@@ -30,7 +32,7 @@ function calcularTotal() {
             document.getElementById("errorCategoria").classList.remove("d-none");
             error = true;
     }
-    if (cantidad.value == "") {
+    if (cantidad.value == "" || cantidad.value <= 0) {
         document.getElementById("errorCantidad").classList.remove("d-none");
         error = true;
     }
@@ -111,3 +113,20 @@ junior.addEventListener("click", () => {
     trainee.classList.remove("bg-info-subtle");
 })
 categoria.addEventListener("change", pintarTarjetas);
+
+categoria.addEventListener("change", () => {
+    if(categoria.value != "Categoria"){
+        document.getElementById("Comprar").disabled = false;
+    }
+    else {
+        document.getElementById("Comprar").disabled = true;
+        document.getElementById("errorCategoria").classList.remove("d-none");
+        error = true;
+    }
+})
+
+botonResumen.addEventListener("clic", () => {
+    alert("Alerta")
+    addEventListener("submit")
+    evento.preventDefault()
+})

@@ -14,39 +14,7 @@
 
 <body>
   <!-- Header y nav -->
-  <header class="conteiner-fluid">
-    <nav class="navbar navbar-expand-lg fondo-gris position-fixed z-2 w-100">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="./images/codoacodo.png" alt="logo codo a codo" height="60px">
-          <h2 class="texto-blanco fs-4 m-0">Conf Bs As</h2>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-xl-center align-items-md-start">
-            <li class="nav-item">
-              <a class="texto-gris" href="#">La conferencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="texto-gris" href="#oradores">Los oradores</a>
-            </li>
-            <li class="nav-item">
-              <a class="texto-gris" href="#lugar">El lugar y la fecha</a>
-            </li>
-            <li class="nav-item">
-              <a class="texto-gris" href="#formulario">Conviértete en orador</a>
-            </li>
-            <li class="nav-item">
-              <a class="texto-gris texto-verde" href="comprar_tickets.html">Comprar tickets</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <?php include "nav.php" ?>
 
   <!-- Carrusel de imágenes -->
   <div class="oscurecer"></div>
@@ -58,7 +26,7 @@
         otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
       <div class="botones mt-md-5">
         <button class="btn btn-outline-light my-3">Quiero ser orador</button>
-        <button class="btn btn-success">Comprar tickets</button>
+        <a href="comprar_tickets.php"><button class="btn btn-success" href="comprar_tickets.php">Comprar tickets</button></a>
       </div>
     </div>
   </div>
@@ -182,18 +150,7 @@
   </div class="contact_form">
 
   <!-- Footer -->
-  <footer class="container-fluid fondo-azul py-5">
-    <ul
-      class="p-0 m-0 px-xl-5 d-flex flex-column align-items-center flex-xl-row justify-content-between justify-content-xl-evenly texto-blanco fs-5">
-      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Preguntas frecuentes</a></li>
-      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Contáctanos</a></li>
-      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Prensa</a></li>
-      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Conferencias</a></li>
-      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Términos y condiciones</a></li>
-      <li class="nav-item pb-3 pb-xl-0"><a class="texto-gris" href="#">Privacidad</a></li>
-      <li class="nav-item"><a class="texto-gris" href="#">Estudiantes</a></li>
-    </ul>
-  </footer>
+  <?php include "footer.php" ?>
   <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
